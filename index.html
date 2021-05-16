@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	
-</body>
+
+	<head>
+
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="./style/stylesheet.css">
+
+		<title>Beautiful Weather</title>
+
+	</head>
+
+	<body>
+
+		<div class="location">
+			<h1 class="location-timezone">Timezone</h1>
+			<canvas id = "weather-icon" class = "icon" width = 128 height = 128></canvas>
+		</div>
+
+		<div class="temperature-container">
+
+			<div class="temperature">
+				<h2 class = "temperature-value">34</h2>
+				<span class= "temperature-unit">F</span>
+			</div>
+
+			<div class="temperature-desc">
+				Cloudy
+			</div>
+
+		</div>
+
+		<script src = "./script/app.js"></script>
+
+	</body>
+
 </html>
