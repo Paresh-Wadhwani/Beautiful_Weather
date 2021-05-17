@@ -131,12 +131,7 @@ const approvedPermissionHandler = position =>
 	let long = position.coords.longitude;
 	let lat = position.coords.latitude;
 
-	console.log(long)
-	console.log(lat)
-
 	const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=imperial`
-
-	console.log(weatherApiUrl)
 
 	fetch(weatherApiUrl)
 		.then
