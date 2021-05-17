@@ -8,6 +8,34 @@ let temperatureSection;
 
 const iconId = 'weather-icon'
 
+const farenheitToCelsuis = (f) =>
+{
+	const c = (f - 32) * 5 / 9
+	return Number(c.toFixed(2))
+}
+
+const celsuisToFarenheit = (c) =>
+{
+	const f = (c * 9 / 5) + 32
+	return Number(f.toFixed(2))
+}
+
+const temperatureClickHandler = () =>
+{
+	const currentUnit = unit.textContent
+
+	if (currentUnit === 'F')
+	{
+		unit.textContent = 'C'
+		temperatureValue.textContent = farenheitToCelsuis(temperatureValue.textContent)
+	}
+	else if (currentUnit === 'C')
+	{
+		unit.textContent = 'F'
+		temperatureValue.textContent = celsuisToFarenheit(temperatureValue.textContent)
+	}
+}
+
 const capitalizeString = (strng) =>
 {
 	const capitalized = strng.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase())
@@ -146,6 +174,12 @@ const mainApplicationController = () =>
 		const alertMessage_unsupported = 'Your browser does not support Geolocation which is required for proper functioning of this app.'
 		alert(alertMessage_unsupported)
 	}
+
+	temperatureSection.addEventListener
+	(
+		'click',
+		temperatureClickHandler
+	)
 
 }
 

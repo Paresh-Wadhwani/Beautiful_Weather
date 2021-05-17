@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 
 	<head>
 
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset = "UTF-8">
+		<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" href="./style/stylesheet.css">
+		<link rel = "stylesheet" href = "./style/stylesheet.css">
 
 		<title>Beautiful Weather</title>
 
@@ -15,25 +15,26 @@
 
 	<body>
 
-		<div class="location">
-			<h1 class="location-timezone">Timezone</h1>
+		<div class = "location">
+			<h1 class = "location-timezone"></h1>
 			<canvas id = "weather-icon" class = "icon" width = 128 height = 128></canvas>
 		</div>
 
-		<div class="temperature-container">
+		<div class = "temperature-container">
 
-			<div class="temperature">
-				<h2 class = "temperature-value">34</h2>
-				<span class= "temperature-unit">F</span>
+			<div class = "temperature">
+				<h2 class = "temperature-value">Loading...</h2>
+				<span class = "temperature-unit"></span>
 			</div>
 
-			<div class="temperature-desc">
-				Cloudy
-			</div>
+			<div class = "temperature-desc"></div>
 
 		</div>
 
+		<div class = "placeholder"></div>
+
 		<script src = "./script/app.js"></script>
+		<script src = "https://cdn.rawgit.com/darkskyapp/skycons/master/skycons.js"></script>
 
 	</body>
 

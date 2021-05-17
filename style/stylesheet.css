@@ -17,7 +17,7 @@ body
 	color: #fff;
 }
 
-.location, .temperature
+.location, .temperature-container
 {
 	height: 30vh;
 	width: 50%;
@@ -26,20 +26,36 @@ body
 	align-items: center;
 }
 
-.temperature
+.placeholder
 {
-	flex-direction: column;
-	cursor: pointer;
+	height: 5vh;
+	display: flex;
 }
 
 .temperature-container
 {
+	flex-direction: column;
+}
+
+.temperature
+{
 	display: flex;
 	align-items: center;
+	cursor: pointer;
 }
 
 .temperature-unit
 {
-	margin: 10px;
+	margin: 10px 0px 10px 0px;
 	font-size: 30px;
+}
+
+.temperature-value
+{
+	font-size: 40px;
+}
+
+.temperature-desc
+{
+	font-size: 18px;
 }
